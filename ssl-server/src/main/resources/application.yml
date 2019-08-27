@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: ssl-server
+server:
+  port: 8091
+  ssl:
+    key-alias: server
+    key-password: server
+    key-store: server.jks
+    key-store-provider: SUN
+    key-store-type: JKS
+    client-auth: need
+    trust-store: trust.jks
+    trust-store-password: trust
+    trust-store-type: jks
+    trust-store-provider: SUN

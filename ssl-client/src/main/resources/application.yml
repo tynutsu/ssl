@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: ssl-client
+server:
+  port: 9001
+  ssl:
+    enabled: true
+    key-alias: client
+    key-password: client
+    key-store: client.jks
+    key-store-provider: SUN
+    key-store-type: JKS
+    client-auth: want
+    trust-store: trust.jks
+    trust-store-password: trust
+    trust-store-type: jks
+    trust-store-provider: SUN
